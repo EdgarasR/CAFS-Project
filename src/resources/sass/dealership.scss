@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/bootstrap";
+
+.carousel-caption {
+    top: 40px;
+    width: 300px;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar-nav {
+    display: table;
+    width: 100%;
+    margin: 0;
+    width: 100%;
+}
+.navbar-nav > li {
+    float: none;
+    display: table-cell;
+    width: 16.66%;
+    vertical-align: middle;
+}
+.navbar-nav > li > a {
+    text-align: center;
+}
+.navbar-nav > li > a:hover {
+    background-color: black;
+    color: white;
+}
+.card > a {
+    text-decoration: none;
+    color: black;
+}
+.btn-more,
+.btn-reg {
+    border-radius: 0;
+}
+.shadow {
+    box-shadow: 0px 12px 6px -6px black;
+}
+.btn-reg {
+    background-color: black;
+    color: white;
+}
