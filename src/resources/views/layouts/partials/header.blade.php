@@ -1,7 +1,7 @@
 <header>
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-2 border-bottom position-relative">
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <img src="images/Logo.svg" alt="Home" width='50' height='50'>
+            <img src="/images/Logo.svg" alt="Home" width='50' height='50'>
         </a>
         <span class="fs-4 position-absolute end-0">{{ config('app.name') }}</span>
     </div>
