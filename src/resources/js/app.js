@@ -41,3 +41,21 @@ btn.addEventListener("click", () => {
         path.setAttribute("d", arrowDown);
     }
 });
+
+let driveBtn = document.querySelector("#drive");
+let driveHdr = document.querySelector("#drive-header");
+
+// driveHdr.scrollIntoView(true);
+
+driveBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    driveHdr.scrollIntoView(true);
+});
+
+let newsBtn = document.querySelector("#newsTag");
+let newsHdr = document.querySelector("#newsDiv");
+
+newsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    newsHdr.scrollIntoView(true);
+});

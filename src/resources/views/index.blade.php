@@ -23,8 +23,9 @@
         <main>
             <!-- @include('layouts.content.carousel') -->
             @yield('carousel')
+            <span id='newsDiv'></span>
             <div class="mt-5 d-flex justify-content-center">
-                <h1 class=""><b>BMW</b> NAUJIENOS</h1>
+                <h1><b>BMW</b> NAUJIENOS</h1>
             </div>
             @include('layouts.content.news')
             @include('layouts.content.testDrive')

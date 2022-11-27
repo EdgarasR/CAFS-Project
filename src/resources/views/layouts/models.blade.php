@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
  --}}
-    @vite(['resources/sass/dealership.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/dealership.scss', 'resources/js/dealership/dealership.js'])
     @stack('styles')
     <title>{{ config('app.name') }}@yield('title')</title>
 </head>
@@ -31,7 +31,7 @@
                         <h4 class="card-text"><b>{{ $car->price }} &#8364</b></h4>
                     </div>
                     <div class="card-body">
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="{{ route('single', $car->id) }}" class="btn btn-primary">Daugiau informacijos</a>
                     </div>
                 </div>
                 @endforeach

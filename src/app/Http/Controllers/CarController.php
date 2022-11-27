@@ -14,4 +14,10 @@ class CarController extends Controller
 
         return view('layouts.models', ['cars' => $cars]);
     }
+
+    public function single($id)
+    {
+        $car = Car::find($id);
+        return view('single', ['car' => $car]);
+    }
 }

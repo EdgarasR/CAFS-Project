@@ -1,12 +1,16 @@
-// let btn = document.querySelector(".btn-more");
-// let news2 = document.querySelector(".news-2");
-// console.log(btn);
-// console.log(news2);
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            document.getElementById("navbar_top").classList.add("fixed-top");
+            document.getElementById("navbar_top").classList.add("shadow");
 
-// btn.addEventListener("click", () => {
-//     if (news2.style.display === "none") {
-//         news2.style.display = "flex";
-//     } else {
-//         news2.style.display = "none";
-//     }
-// });
+            let navbar_height = document.querySelector(".navbar").offsetHeight;
+            document.body.style.paddingTop = navbar_height + "px";
+        } else {
+            document.getElementById("navbar_top").classList.remove("fixed-top");
+            document.getElementById("navbar_top").classList.remove("shadow");
+
+            document.body.style.paddingTop = "0";
+        }
+    });
+});

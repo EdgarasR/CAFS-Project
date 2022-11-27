@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('gearbox');
             $table->integer('power');
             $table->string('color');
+            $table->string('interior');
             $table->integer('price');
             $table->text('img');
             $table->timestamps();

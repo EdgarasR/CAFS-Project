@@ -23,6 +23,7 @@ class CarFactory extends Factory
             'gearbox' => fake()->randomElement(['Automatinė', 'Mechaninė']),
             'power' => fake()->numberBetween(80, 280),
             'color' => fake()->randomElement(['Juoda', 'Balta', 'Raudona', 'Mėlyna', 'Pilka', 'Žalia']),
+            'interior' => fake()->randomElement(['Mini', 'Midi', 'Maxi']),
             'price' => fake()->randomFloat(2, 25000, 95000),
             'img' => 'https://images.assetsdelivery.com/compings_v2/rashadashurov/rashadashurov2002/rashadashurov200202000.jpg',
         ];
