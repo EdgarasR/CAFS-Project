@@ -16,7 +16,7 @@
                     <a class="nav-link border-start" aria-current="page" href=" {{ route('models') }} ">Modeliai</a>
                 </li>
                 <li class="nav-item">
-                    <a id='drive' class="nav-link border-start" href="">Bandomasis važiavimas</a>
+                    <a id='drive' class="nav-link border-start" href="/">Bandomasis važiavimas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link border-start" href="https://www.krasta-auto.lt/bmw/servisas/">Servisas</a>
@@ -28,7 +28,7 @@
                     <a class="nav-link border-start" href='#'>Aksesuarai ir detalės</a>
                 </li>
                 <li class="nav-item">
-                    <a id='newsTag' class="nav-link border-start border-end" href=''>Naujienos</a>
+                    <a id='newsTag' class="nav-link border-start border-end" href='/'>Naujienos</a>
                 </li>
             </ul>
         </div>

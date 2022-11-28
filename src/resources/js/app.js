@@ -59,3 +59,28 @@ newsBtn.addEventListener("click", (e) => {
     e.preventDefault();
     newsHdr.scrollIntoView(true);
 });
+
+let forms = document.querySelectorAll(".needs-validation");
+let modalBtn = document.querySelector("#modalBtn");
+
+function reset() {
+    modalBtn.removeAttribute("data-bs-toggle");
+    modalBtn.removeAttribute("data-bs-target");
+}
+
+Array.from(forms).forEach((form) => {
+    form.addEventListener(
+        "submit",
+        (event) => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            modalBtn.setAttribute("data-bs-toggle", "modal");
+            modalBtn.setAttribute("data-bs-target", "#staticBackdrop");
+            reset();
+            form.classList.add("was-validated");
+        },
+        false
+    );
+});

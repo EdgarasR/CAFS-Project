@@ -11,10 +11,11 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-8">
-            <form class="row g-3 needs-validation">
+            <form class="row g-3 needs-validation" action="/testDrive" method="POST" novalidate>
+                @csrf
                 <div class="col-6">
                     <label for="model" class="form-label"><b>Jus dominantis modelis</b></label>
-                    <select class="form-select" id="model" required>
+                    <select class="form-select" id="model" name="model" required>
                         <option value="ser1">BMW 1 Serija</option>
                         <option value="ser2">BMW 2 Serija</option>
                         <option value="ser3">BMW 3 Serija</option>
@@ -32,51 +33,57 @@
                         <option value="X7">X7</option>
                         <option value="iX">iX</option>
                     </select>
+                    <div class="invalid-feedback">
+                        Pasirinkite modelį
+                    </div>
                 </div>
                 <div class="col-6">
                     <label for="city" class="form-label"><b>Miestas</b></label>
-                    <select class="form-select" id="city" required>
-                        <option value="ser1">Vilnius</option>
-                        <option value="ser2">Kaunas</option>
-                        <option value="ser3">Klaipėda</option>
+                    <select class="form-select" id="city" name="city" required>
+                        <option value="Vinlius">Vilnius</option>
+                        <option value="Kaunas">Kaunas</option>
+                        <option value="Klaipėda">Klaipėda</option>
                     </select>
+                    <div class="invalid-feedback">
+                        Pasirinkite miestą
+                    </div>
                 </div>
                 <div class="col-6">
                     <label for="name" class="form-label"><b>Vardas ir pavardė</b></label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" id="name" name="name" required>
                     <div class="invalid-feedback">
-                        Please choose a username.
+                        Nurodykite savo vardą ir pavardę
                     </div>
                 </div>
                 <div class="col-6">
                     <label for="personalCar" class="form-label"><b>Vairuojamas automobilis</b></label>
-                    <input type="text" class="form-control" id="personalCar" required>
+                    <input type="text" class="form-control" id="personalCar" name="personalCar" required>
                     <div class="invalid-feedback">
-                        Please choose a username.
+                        Nurodykite savo automobilį
                     </div>
                 </div>
                 <div class="col-6">
                     <label for="phone" class="form-label"><b>Telefono numeris</b></label>
-                    <input type="text" class="form-control" id="phone" required>
+                    <input type="text" class="form-control" id="phone" name="phone" required>
                     <div class="invalid-feedback">
-                        Please choose a username.
+                        Nurodykite savo telefono numerį
                     </div>
                 </div>
                 <div class="col-6">
                     <label for="email" class="form-label"><b>El. paštas</b></label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required>
                     <div class="invalid-feedback">
-                        Please choose a username.
+                        Nurodykite el. pašto adresą
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-outline-dark mt-4 btn-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><b>REGISTRUOTIS VAŽIAVIMUI</b></button>
+                    <button id="modalBtn" type="submit" class="btn btn-outline-dark mt-4 btn-reg"><b>REGISTRUOTIS VAŽIAVIMUI</b></button>
                 </div>
             </form>
         </div>
     </div>
     <div class="text-center">
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

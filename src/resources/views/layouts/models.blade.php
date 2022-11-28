@@ -30,7 +30,7 @@
                         <p class="card-text">Variklis: {{ $car->engine }} l.<br>Galia: {{ $car->power }} kW.<br>Pavarų dėžė: {{ $car->gearbox }}.<br>Spalva: {{ $car->color }}<br></p>
                         <h4 class="card-text"><b>{{ $car->price }} &#8364</b></h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body align-items-end">
                         <a href="{{ route('single', $car->id) }}" class="btn btn-primary">Daugiau informacijos</a>
                     </div>
                 </div>

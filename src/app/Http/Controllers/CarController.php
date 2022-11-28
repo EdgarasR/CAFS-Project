@@ -8,7 +8,7 @@ use App\Models\Car;
 
 class CarController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $cars = DB::table('cars')->get();
 
