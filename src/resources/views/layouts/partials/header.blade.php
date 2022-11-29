@@ -3,7 +3,7 @@
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
             <img src="/images/Logo.svg" alt="Home" width='50' height='50'>
         </a>
-        <span class="fs-4 position-absolute end-0">{{ config('app.name') }}</span>
+        <span class="fs-4 position-absolute end-0"><b>{{ config('app.name') }}</b></span>
     </div>
     <nav class="navbar navbar-expand-lg bg-light" id="navbar_top">
         <!-- <div class="container-fluid"> -->
@@ -19,7 +19,7 @@
                     <a id='drive' class="nav-link border-start" href="/">Bandomasis važiavimas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link border-start" href="https://www.krasta-auto.lt/bmw/servisas/">Servisas</a>
+                    <a class="nav-link border-start" href="/service">Servisas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link border-start" href=' #'>Specialūs pasiūlymai</a>

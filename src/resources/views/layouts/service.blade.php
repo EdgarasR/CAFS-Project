@@ -21,24 +21,7 @@
     <div class="container py-3">
         @include('layouts.partials.header')
         <main>
-            <div class="row text-center justify-content-between">
-                @foreach ($cars as $car)
-                <div class="card mt-4" style="width: 18rem;">
-                    <img src="{{ $car->img }}" class="card-img-top mt-3" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>BMW {{ $car->model }}</b></h5>
-                        <p class="card-text">Variklis: {{ $car->engine }} l.<br>Galia: {{ $car->power }} kW.<br>Pavarų dėžė: {{ $car->gearbox }}.<br>Spalva: {{ $car->color }}<br></p>
-                        <h4 class="card-text"><b>{{ $car->price }} &#8364</b></h4>
-                    </div>
-                    <div class="card-body align-items-end">
-                        <a href="{{ route('single', $car->id) }}" class="btn btn-primary">Daugiau informacijos</a>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-            <div class="mt-4 d-flex justify-content-center">
-                {{ $cars->links() }}
-            </div>
+            @include('layouts.content.carService')
         </main>
         @include('layouts.partials.footer')
     </div>

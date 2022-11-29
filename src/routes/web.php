@@ -13,5 +13,6 @@ Route::get('/', function () {
 Route::get('/models', [CarController::class, 'index'])->name('models');
 Route::get('/models/{model}/single', [CarController::class, 'single'])->name('single');
 Route::post('/testDrive', [FileController::class, 'write']);
+Route::get('/service', [CarController::class, 'service'])->name('service');
 
 require __DIR__ . '/auth.php';

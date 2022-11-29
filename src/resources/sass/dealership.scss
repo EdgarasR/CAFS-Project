@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: "Quicksand", sans-serif;
+    // font-family: "Quicksand", sans-serif;
 }
 
 .navbar-nav {
@@ -41,5 +41,23 @@
 }
 .btn-reg {
     background-color: black;
+    color: white;
+}
+.hero-image {
+    height: 305px;
+    width: 610px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
     color: white;
 }

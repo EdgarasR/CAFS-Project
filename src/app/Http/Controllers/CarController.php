@@ -10,7 +10,7 @@ class CarController extends Controller
 {
     public function index()
     {
-        $cars = DB::table('cars')->get();
+        $cars = DB::table('cars')->orderBy('model')->paginate(12);
 
         return view('layouts.models', ['cars' => $cars]);
     }
@@ -19,5 +19,10 @@ class CarController extends Controller
     {
         $car = Car::find($id);
         return view('single', ['car' => $car]);
+    }
+
+    public function service()
+    {
+        return view('layouts.service');
     }
 }
