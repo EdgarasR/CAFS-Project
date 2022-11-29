@@ -25,4 +25,9 @@ class CarController extends Controller
     {
         return view('layouts.service');
     }
+
+    public function placeholder()
+    {
+        return view('layouts.content.placeholder');
+    }
 }

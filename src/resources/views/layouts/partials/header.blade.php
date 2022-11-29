@@ -22,10 +22,10 @@
                     <a class="nav-link border-start" href="/service">Servisas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link border-start" href=' #'>Specialūs pasiūlymai</a>
+                    <a class="nav-link border-start" href='/placeholder'>Specialūs pasiūlymai</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link border-start" href='#'>Aksesuarai ir detalės</a>
+                    <a class="nav-link border-start" href='/placeholder'>Aksesuarai ir detalės</a>
                 </li>
                 <li class="nav-item">
                     <a id='newsTag' class="nav-link border-start border-end" href='/'>Naujienos</a>

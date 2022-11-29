@@ -14,5 +14,6 @@ Route::get('/models', [CarController::class, 'index'])->name('models');
 Route::get('/models/{model}/single', [CarController::class, 'single'])->name('single');
 Route::post('/testDrive', [FileController::class, 'write']);
 Route::get('/service', [CarController::class, 'service'])->name('service');
+Route::get('/placeholder', [CarController::class, 'placeholder']);
 
 require __DIR__ . '/auth.php';
