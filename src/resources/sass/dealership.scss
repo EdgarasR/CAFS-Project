@@ -5,10 +5,6 @@
     width: 300px;
 }
 
-* {
-    // font-family: "Quicksand", sans-serif;
-}
-
 .navbar-nav {
     display: table;
     width: 100%;
@@ -59,5 +55,19 @@
     top: 30%;
     left: 20%;
     transform: translate(-50%, -50%);
+    color: white;
+}
+.pagination > li > .page-link {
+    color: black;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: black;
+    border-color: black;
     color: white;
 }
