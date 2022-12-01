@@ -11,19 +11,19 @@
     </div>
     <div class="row justify-content-center mt-5">
         <div class="col-8">
-            <form class="row g-3 needs-validation" action="/testDrive" method="POST" novalidate>
+            <form class="row g-3 needs-validation" action="/mail" method="GET" novalidate>
                 @csrf
                 <div class="col-6">
                     <label for="model" class="form-label"><b>Jus dominantis modelis</b></label>
                     <select class="form-select" id="model" name="model" required>
-                        <option value="ser1">BMW 1 Serija</option>
-                        <option value="ser2">BMW 2 Serija</option>
-                        <option value="ser3">BMW 3 Serija</option>
-                        <option value="ser4">BMW 4 Serija</option>
-                        <option value="ser5">BMW 5 Serija</option>
-                        <option value="ser6">BMW 6 Serija</option>
-                        <option value="ser7">BMW 7 Serija</option>
-                        <option value="ser8">BMW 8 Serija</option>
+                        <option value="1 Serija">BMW 1 Serija</option>
+                        <option value="2 Serija">BMW 2 Serija</option>
+                        <option value="3 Serija">BMW 3 Serija</option>
+                        <option value="4 Serija">BMW 4 Serija</option>
+                        <option value="5 Serija">BMW 5 Serija</option>
+                        <option value="6 Serija">BMW 6 Serija</option>
+                        <option value="7 Serija">BMW 7 Serija</option>
+                        <option value="8 Serija">BMW 8 Serija</option>
                         <option value="X1">X1</option>
                         <option value="X2">X2</option>
                         <option value="X3">X3</option>
