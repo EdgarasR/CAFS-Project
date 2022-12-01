@@ -10,7 +10,7 @@ class CarController extends Controller
 {
     public function index()
     {
-        $cars = DB::table('cars')->orderBy('model')->paginate(12);
+        $cars = Car::orderBy('model')->paginate(12);
 
         return view('layouts.models', ['cars' => $cars]);
     }

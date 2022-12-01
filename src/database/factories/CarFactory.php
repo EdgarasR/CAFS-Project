@@ -17,8 +17,8 @@ class CarFactory extends Factory
     public function definition()
     {
         return [
-            'model' => fake()->randomElement(['1', '2', '3', '4', '5', '6', '7', '8', 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7']),
-            'engine' => fake()->randomElement(['1.6', '1.8', '2.0', '2.5', '2.8', '3.0', '3.5']),
+            'model' => fake()->randomElement([1, 2, 3, 4, 5, 6, 7, 8, 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7']),
+            'engine' => fake()->randomElement([1.6, 1.8, 2.0, 2.5, 2.8, 3.0, 3.5]),
             'fuel' => fake()->randomElement(['Dyzelinas', 'Benzinas']),
             'gearbox' => fake()->randomElement(['Automatinė', 'Mechaninė']),
             'power' => fake()->numberBetween(80, 280),
